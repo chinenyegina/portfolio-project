@@ -43,7 +43,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="#">Twitter</a>
+            <a class="nav-item nav-link" href="https://www.linkedin.com/in/chinenye-okeke-841244152">LinkedIn</a>
             <a class="nav-item nav-link" href="{% static 'cv.pdf' %}">Resume</a>
             <a class="nav-item nav-link" href="{% url 'allblog' %}">Blog</a>
           </div>
@@ -56,19 +56,34 @@
     <section class="jumbotron text-center">
       <div class="container">
         <h1 class="jumbotron-heading">Hi I am Chinenye</h1>
-        <p class="lead text-muted">Hey, I am Okeke Chinenye and I love to make django websites. It's the thrill of handling the requests that the people want! </p>
+        <p class="lead text-muted">Hey, I am Okeke Chinenye and I've always been drawn to the overlap between design and development. It's the thrill of handling the requests that the people want!.</p>
+        <p class="lead text-muted">My skills are broad: from front end to back end development. I enjoy each aspect, and love building sites & mobile apps from start to finish, for clients </p>
+        <p>  I'm available for remote work - if you would like to build something together, get in touch ?</p>
         <p>
-          <a href="mailto:talk2gina61@yahoo.com" class="btn btn-primary my-2">Email Me</a>
-
+         <a href="mailto:talk2gina61@yahoo.com" class="btn btn-secondary my-2">Email Me</a>
         </p>
-        <img src="{% static 'dp.jpg' %}" height="200"/>
+
+        <img class="img-fluid rounded" src="{% static 'dp.jpg' %}" height="200"/>
       </div>
     </section>
 
-    <div class="album py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Skills</h2>
+      <hr class="bg-dark">
+      <ul class="list-unstyled">
+        <li><h4>Front-end</h4></li>
+        <li>CSS3, JavaScript, HTML5</li>
+        <li><h4>Back-end</h4></li>
+        <li>Python, Django, Postgres</li>
+        <li><h4>Apps</h4></li>
+        <li>Mobile apps</li>
+      </ul>
+    </div>
+
+    <div class="album py-5 bg-secondary">
       <div class="container">
         <h2 class="text-center"> Recent works </h2>
-        <hr>
+        <hr class="bg-dark">
           <div class="row">
           {% for job in jobs.all %}
             <div class="col-md-4">
@@ -88,9 +103,22 @@
 
   </main>
 
-  <footer class="text-muted">
-    <div class="container text-center">
+  <footer class="text-muted bg-dark">
+    <div class="container text-center bg-light">
+      <div class="row">
+        <div class ="col-sm-4">
+          <a href=""><img src="{% static 'Facebook.png' %}" class="img-fluid"></a>
+        </div>
+        <div class ="col-sm-4">
+          <a href=""><img src="{% static 'Instagram.png' %}" class="img-fluid"></a>
+        </div>
+        <div class ="col-sm-4">
+          <a href=""><img src="{% static 'WhatsApp.png' %}" class="img-fluid"></a>
+        </div>
+      </div>
+      <div>
       <p>© Okeke Chinenye {% now "Y" %}</p>
+    </div>
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
