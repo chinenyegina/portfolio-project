@@ -43,13 +43,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="#">Twitter</a>
+            <a class="nav-item nav-link" href="https://www.linkedin.com/in/chinenye-okeke-841244152">LinkedIn</a>
             <a class="nav-item nav-link" href="{% static 'cv.pdf' %}">Resume</a>
             <a class="nav-item nav-link active" href="{% url 'allblog' %}">Blog</a>
           </div>
         </div>
         </nav>
-  </header>
+      </header>
 
   <main role="main">
     <div class="container">
@@ -62,10 +62,17 @@
 
       </div>
   </main>
-
-  <footer class="text-muted">
+</body>
+  <footer class="text-light bg-secondary my-5">
     <div class="container text-center">
+      <ul class="list-inline mx-auto ml-2 mt-3 pt-2">
+          <li class="list-inline-item"><a href=""><img src="{% static 'Facebook.png' %}" height="40"></a></li>
+          <li class="list-inline-item"><a href=""><img src="{% static 'Instagram.png' %}" height="40"></a></li>
+          <li class="list-inline-item"><a href=""><img src="{% static 'WhatsApp.png' %}" height="40"></a></li>
+      </ul>
+      <div>
       <p>© Okeke Chinenye {% now "Y" %}</p>
+    </div>
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
