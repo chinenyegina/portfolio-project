@@ -53,25 +53,25 @@
 
   <main role="main">
 
-    <section class="jumbotron text-center">
+    <section class="jumbotron jumbotron-fluid text-center">
       <div class="container">
         <h1 class="jumbotron-heading">Hi I am Chinenye</h1>
         <p class="lead text-muted">Hey, I am Okeke Chinenye and I've always been drawn to the overlap between design and development. It's the thrill of handling the requests that the people want!.</p>
         <p class="lead text-muted">My skills are broad: from front end to back end development. I enjoy each aspect, and love building sites & mobile apps from start to finish, for clients </p>
-        <p>  I'm available for remote work - if you would like to build something together, get in touch ?</p>
+        <p class="lead text-muted">  I'm available for remote work - if you would like to build something together, get in touch ?</p>
         <p>
          <a href="mailto:talk2gina61@yahoo.com" class="btn btn-secondary my-2">Email Me</a>
         </p>
 
-        <img class="img-fluid rounded" src="{% static 'dp.jpg' %}" height="200"/>
+        <img class="img-fluid" src="{% static 'dp.jpg' %}" height="200"/>
       </div>
     </section>
 
     <div class="container">
       <h2 class="text-center">Skills</h2>
-      <hr class="bg-dark">
-      <ul class="list-unstyled">
-        <li><h4>Front-end</h4></li>
+      <hr class="my-2 mx-auto">
+      <ul class="list-unstyled text-muted">
+        <li><h4 class="text-muted">Front-end</h4></li>
         <li>CSS3, JavaScript, HTML5</li>
         <li><h4>Back-end</h4></li>
         <li>Python, Django, Postgres</li>
@@ -80,7 +80,7 @@
       </ul>
     </div>
 
-    <div class="album py-5 bg-secondary">
+    <div class="album py-5">
       <div class="container">
         <h2 class="text-center"> Recent works </h2>
         <hr class="bg-dark">
@@ -103,19 +103,13 @@
 
   </main>
 
-  <footer class="text-muted bg-dark">
-    <div class="container text-center bg-light">
-      <div class="row">
-        <div class ="col-sm-4">
-          <a href=""><img src="{% static 'Facebook.png' %}" class="img-fluid"></a>
-        </div>
-        <div class ="col-sm-4">
-          <a href=""><img src="{% static 'Instagram.png' %}" class="img-fluid"></a>
-        </div>
-        <div class ="col-sm-4">
-          <a href=""><img src="{% static 'WhatsApp.png' %}" class="img-fluid"></a>
-        </div>
-      </div>
+  <footer class="text-muted">
+    <div class="container text-center">
+      <ul class="list-inline mx-auto">
+          <li class="list-inline-item"><a href=""><img src="{% static 'Facebook.png' %}"></a></li>
+          <li class="list-inline-item"><a href=""><img src="{% static 'Instagram.png' %}"></a></li>
+          <li class="list-inline-item"><a href=""><img src="{% static 'WhatsApp.png' %}"></a></li>
+      </ul>
       <div>
       <p>© Okeke Chinenye {% now "Y" %}</p>
     </div>
