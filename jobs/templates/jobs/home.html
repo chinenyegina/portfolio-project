@@ -53,7 +53,7 @@
 
   <main role="main">
 
-    <section class="jumbotron jumbotron-fluid text-center">
+    <section class="jumbotron text-center">
       <div class="container">
         <h1 class="jumbotron-heading">Hi I am Chinenye</h1>
         <p class="lead text-muted">Hey, I am Okeke Chinenye and I've always been drawn to the overlap between design and development. It's the thrill of handling the requests that the people want!.</p>
@@ -63,12 +63,12 @@
          <a href="mailto:talk2gina61@yahoo.com" class="btn btn-secondary my-2">Email Me</a>
         </p>
 
-        <img class="img-fluid" src="{% static 'dp.jpg' %}" height="200"/>
+        <img class="img-fluid" src="{% static 'dp.jpg' %}" height="100"/>
       </div>
     </section>
 
     <div class="container">
-      <h2 class="text-center">Skills</h2>
+      <h2 class="text-body">Skills</h2>
       <hr class="my-2 mx-auto">
       <ul class="list-unstyled text-muted">
         <li><h4 class="text-muted">Front-end</h4></li>
@@ -82,7 +82,7 @@
 
     <div class="album py-5">
       <div class="container">
-        <h2 class="text-center"> Recent works </h2>
+        <h2 class="text-center text-body"> Recent works </h2>
         <hr class="bg-dark">
           <div class="row">
           {% for job in jobs.all %}
@@ -103,7 +103,7 @@
 
   </main>
 
-  <footer class="text-muted">
+  <footer class="text-muted bg-secondary">
     <div class="container text-center">
       <ul class="list-inline mx-auto">
           <li class="list-inline-item"><a href=""><img src="{% static 'Facebook.png' %}"></a></li>
